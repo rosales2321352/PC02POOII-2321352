@@ -21,7 +21,7 @@ public class App3 {
 
         // 12
 
-        System.out.println("¿Qué imprime los siguientes fragmentos de código y explique cuál es la diferencia\n" +
+        System.out.println("¿Qué imprime los siguientes fragmentos de códigos y explique cuál es la diferencia\n" +
                 "entre map y flatmap? ss");
 
         Map<String, List<String>> user = new HashMap<>();
