@@ -8,6 +8,7 @@ public class App2 {
 
     public static void main (String[] args){
 
+
         String banco = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ123456789";
 
         List<String> cadenasAleatorias = Stream.generate(() -> {
@@ -20,6 +21,9 @@ public class App2 {
             .collect(Collectors.joining());
         }).limit(10)
         .map(Object::toString).toList();
+
+        // 9
+        System.out.println("¿Cómo contabilizar el total de todos las palabras de un arreglo de cadena?");
 
         Long totalPalabras = cadenasAleatorias.stream().count();
         System.out.println(totalPalabras);

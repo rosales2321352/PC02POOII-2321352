@@ -50,12 +50,20 @@ public class App {
 
         // 6
         System.out.println(" Dado un array de números enteros, devuelve true si algún valor aparece al menos \n tres veces en el array y devuelve falso si cada elemento es distinto.");
+        Integer[] array = new Integer[]{1, 2, 3, 4, 5, 8, 23, 4, 6, 8, 0, 2}; // Example array
+        boolean elementosQueSeRepitenMasde3Veces = Arrays.stream(array)
+                .anyMatch(element -> Arrays.stream(array).filter(e -> e.equals(element)).count() >= 3);
+
+        System.out.println(elementosQueSeRepitenMasde3Veces);
 
         // 7
-        System.out.println("Dada una lista de números enteros aleatorios, imprimir el número total de\n" +
-                "elementos presentes en la lista usando funciones Stream.");
-        Integer[] A = new Integer[]{1,2,3,4,5,8,23};
-        Integer[] B = new Integer[]{4,6,8,0,2};
+        System.out.println("Dado dos arrays de cadenas, se desea concatenar.");
+        Integer[] A = new Integer[]{1, 2, 3, 4, 5, 8, 23};
+        Integer[] B = new Integer[]{4, 6, 8, 0, 2};
+        List<Integer> list = new ArrayList<>(Arrays.asList(A));
+        list.addAll(Arrays.asList(B));
+        Integer[] concatenatedArray = list.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(concatenatedArray));
 
         // 8
 
