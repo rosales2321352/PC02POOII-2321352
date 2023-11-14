@@ -22,7 +22,7 @@ public class App3 {
         // 12
 
         System.out.println("¿Qué imprime los siguientes fragmentos de código y explique cuál es la diferencia\n" +
-                "entre map y flatmap?");
+                "entre map y flatmap? ss");
 
         Map<String, List<String>> user = new HashMap<>();
         user.put("Carolina", Arrays.asList("051-922-977234",
